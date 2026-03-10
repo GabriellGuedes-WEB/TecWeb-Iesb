@@ -1,12 +1,15 @@
 services:
   app:
-    image: node:24
+    image: node:20 # <- trocar para Node LTS estável
     container_name: aluno-online-vanilla
     working_dir: /app
     volumes:
       - ./:/app
+      - /app/node_modules
     ports:
       - "4173:4173"
       - "5173:5173"
+    command: sh -c "npm install && npm run dev -- --host 0.0.0.0" # <- instala deps e roda Vite
     tty: true
     stdin_open: true
+    
