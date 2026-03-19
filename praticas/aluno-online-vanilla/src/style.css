@@ -17,7 +17,6 @@ body {
   line-height: 1.6;
   color: var(--cor-texto);
   background-color: var(--cor-fundo);
-
   display: flex;
   min-height: 100vh;
 }
