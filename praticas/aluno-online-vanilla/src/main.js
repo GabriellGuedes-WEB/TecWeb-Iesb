@@ -24,6 +24,6 @@ form.addEventListener("submit", function(event) {
   }
 
  if (valido) {
-  window.location.href = "index.html";
+  window.location.href = "dashboard.html";
 }
 });
