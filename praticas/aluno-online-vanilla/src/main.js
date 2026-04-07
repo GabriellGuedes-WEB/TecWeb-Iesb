@@ -1,3 +1,6 @@
+import './style.css'
+import './login.css'
+
 const form = document.getElementById("loginForm");
 const email = document.getElementById("email");
 const senha = document.getElementById("senha");
@@ -23,7 +26,7 @@ form.addEventListener("submit", function(event) {
     valido = false;
   }
 
- if (valido) {
-  window.location.href = "dashboard.html";
-}
+  if (valido) {
+    window.location.href = "dashboard.html";
+  }
 });
